@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <form th:method="post" th:action="@{/encode}" th:object="${requestPasswordDTO}">
+        <label>Input Password : </label>
+        <input th:type="text" th:field="*{password}" />
+        <input th:type="submit" th:name="btSubmit"/>
+    </form>
+</body>
+</html>
